@@ -65,7 +65,7 @@ const TermsOfServiceDialog: React.FC<{
             {" "}
             Prefer to run it yourself locally? This project is open source.{" "}
             <a
-              href="https://github.com/abi/screenshot-to-code"
+              href="https://github.com/uuu555552/ptocode"
               target="_blank"
               className="underline"
             >

@@ -60,4 +60,4 @@ The application will run on http://localhost:3000. Note that you cannot use this
 
 🆕 [Try it here](https://dbbot.net) (bring your own OpenAI key - **Your key must have access to GPT-4 Vision. See the [FAQ](#️-faqs) section for more details**).
 
-感谢前辈 https://github.com/abi/screenshot-to-code
+感谢前辈 https://github.com/uuu555552/ptocode

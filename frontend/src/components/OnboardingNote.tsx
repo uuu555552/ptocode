@@ -12,7 +12,7 @@ export function OnboardingNote() {
         </a>{" "}
         or use your own OpenAI API key with GPT4 vision access.{" "}
         <a
-          href="https://github.com/abi/screenshot-to-code/blob/main/Troubleshooting.md"
+          href="https://github.com/uuu555552/ptocode/blob/main/Troubleshooting.md"
           className="inline underline hover:opacity-70"
           target="_blank"
         >

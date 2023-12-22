@@ -124,7 +124,7 @@ function OutputSettingsSection({
           </a><br></br><br></br>
         </Label>
         <Label className="font-light leading-relaxed" style={myStyle}>
-          <a target="_blank" href="https://github.com/abi/screenshot-to-code">
+          <a target="_blank" href="https://github.com/uuu555552/ptocode">
             源码地址，点个Star，免费体验
           </a>
         </Label>

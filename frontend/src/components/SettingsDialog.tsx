@@ -205,7 +205,7 @@ function SettingsDialog({ settings, setSettings }: Props) {
             {/* <Label className="font-light mt-2 leading-relaxed" style={myStyle}>
               <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gQtTFHCHgyXjsfcXgjKSPBPsNyCJrGDB&jump_from=webapi&authKey=1HpFhOgqS83goVf3Td009vpg09C31cCSRDQYvWeB7Gs5RpwVobiQDS0qAgEOtiq2">或者免费体验资格，加入QQ群:640541448</a></Label>
             <Label className="font-light mt-2 leading-relaxed"  style={myStyle}>
-             <a target="_blank" href="https://github.com/abi/screenshot-to-code" >源码地址，记得点个Star</a>
+             <a target="_blank" href="https://github.com/uuu555552/ptocode" >源码地址，记得点个Star</a>
             </Label> */}
         </div>
 
