@@ -96,7 +96,7 @@ function SettingsDialog({ settings, setSettings }: Props) {
           {!IS_RUNNING_ON_CLOUD && (
             <>
               <Label htmlFor="openai-api-key">
-                <div>OpenAI Base URL (optional)</div>
+                <div>https://api.openai.com (optional)</div>
                 <div className="font-light mt-2 leading-relaxed">
                   如果不想使用默认URL，请替换为代理URL。
                 </div>
