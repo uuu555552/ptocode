@@ -1,36 +1,25 @@
-# screenshot-to-code
+- ​                                                                                                                         [English](README.md) [中文](CN.README.md)
+- [**free-gpt4apikey**]   
+- <a href="https://twitter.com/Stockqwe222" target="_blank" style="background-color: #1DA1F2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; cursor: pointer; font-size: 16px;">
+        Follow me on Twitter!
+    </a>
+- <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gQtTFHCHgyXjsfcXgjKSPBPsNyCJrGDB&jump_from=webapi&authKey=1HpFhOgqS83goVf3Td009vpg09C31cCSRDQYvWeB7Gs5RpwVobiQDS0qAgEOtiq2">
+    <img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="ptocode交流群" title="ptocode交流群">
+    </a>加群640541448领取免费gpt4,dall
 
-This simple app converts a screenshot to code (HTML/Tailwind CSS, or React or Vue or Bootstrap). It uses GPT-4 Vision to generate the code and DALL-E 3 to generate similar-looking images. You can now also enter a URL to clone a live website!
+# PtoCode（图片转代码）
 
-https://github.com/abi/screenshot-to-code/assets/23818/6cebadae-2fe3-4986-ac6a-8fb9db030045
+这是一个简单的应用，能将屏幕截图转化为HTML/Tailwind CSS代码。它使用GPT-4 Vision生成代码，并使用DALL-E 3生成相似的图片。现在，你还可以输入一个URL来克隆一个现有的网站！
 
-See the [Examples](#-examples) section below for more demos.
+🆕 [在此试用](https://dbbot.net)（需要使用你自己的OpenAI密匙 - **你的密匙必须拥有访问GPT-4 Vision的权限，详情请查看下方的[常见问题](#️-faqs)部分**）。或者查看下方的[开始使用](#-getting-started)部分获取本地安装指南。
 
-## 🚀 Try It Out!
+## 🛠 开始使用
 
-🆕 [Try it here](https://screenshottocode.com) (bring your own OpenAI key - **your key must have access to GPT-4 Vision. See [FAQ](#%EF%B8%8F-faqs) section below for details**). Or see [Getting Started](#-getting-started) below for local install instructions.
+该应用程序有一个React/Vite前端和一个FastAPI后端。你将需要一个有权访问GPT-4 Vision API的OpenAI API密钥。
 
-## 🌟 Recent Updates
+运行后端（我使用Poetry进行包管理 - 如果你没有安装它，使用`pip install poetry`命令进行安装）：
 
-- Dec 11 - Start a new project from existing code (allows you to come back to an older project)
-- Dec 7 - 🔥 🔥 🔥 View a history of your edits, and branch off them
-- Nov 30 - Dark mode, output code in Ionic (thanks [@dialmedu](https://github.com/dialmedu)), set OpenAI base URL
-- Nov 28 - 🔥 🔥 🔥 Customize your stack: React or Bootstrap or TailwindCSS
-- Nov 23 - Send in a screenshot of the current replicated version (sometimes improves quality of subsequent generations)
-- Nov 21 - Edit code in the code editor and preview changes live thanks to [@clean99](https://github.com/clean99)
-- Nov 20 - Paste in a URL to screenshot and clone (requires [ScreenshotOne free API key](https://screenshotone.com?via=screenshot-to-code))
-- Nov 19 - Support for dark/light code editor theme - thanks [@kachbit](https://github.com/kachbit)
-- Nov 16 - Added a setting to disable DALL-E image generation if you don't need that
-- Nov 16 - View code directly within the app
-- Nov 15 - You can now instruct the AI to update the code as you wish. It is helpful if the AI messed up some styles or missed a section.
-
-## 🛠 Getting Started
-
-The app has a React/Vite frontend and a FastAPI backend. You will need an OpenAI API key with access to the GPT-4 Vision API.
-
-Run the backend (I use Poetry for package management - `pip install poetry` if you don't have it):
-
-```bash
+```
 cd backend
 echo "OPENAI_API_KEY=sk-your-key" > .env
 poetry install
@@ -38,63 +27,35 @@ poetry shell
 poetry run uvicorn main:app --reload --port 7001
 ```
 
-Run the frontend:
+运行前端:
 
-```bash
+```
 cd frontend
 yarn
 yarn dev
 ```
 
-Open http://localhost:5173 to use the app.
+打开 http://localhost:3000来使用应用程序。
 
-If you prefer to run the backend on a different port, update VITE_WS_BACKEND_URL in `frontend/.env.local`
+如果你希望在不同的端口运行后端，需要更新`frontend/.env.local`中的VITE_WS_BACKEND_URL。
 
-For debugging purposes, if you don't want to waste GPT4-Vision credits, you can run the backend in mock mode (which streams a pre-recorded response):
-
-```bash
-MOCK=true poetry run uvicorn main:app --reload --port 7001
-```
-
-## Configuration
-
-* You can configure the OpenAI base URL if you need to use a proxy: Set OPENAI_BASE_URL in the `backend/.env` or directly in the UI in the settings dialog
+为了调试目的，如果你不想浪费GPT4-Vision的调用次数，你可以在模拟模式下运行后端（这将会播放一个预先录制的响应）：
 
 ## Docker
 
-If you have Docker installed on your system, in the root directory, run:
+如果你的系统上已经安装了Docker，在根目录下，运行以下命令：
 
-```bash
-echo "OPENAI_API_KEY=sk-your-key" > .env
+```
+<BASH>echo "OPENAI_API_KEY=sk-your-key" > .env
 docker-compose up -d --build
 ```
 
-The app will be up and running at http://localhost:5173. Note that you can't develop the application with this setup as the file changes won't trigger a rebuild.
+应用程序将在 http://localhost:3000上运行。注意，你不能使用这个设置来开发应用程序，因为文件的改变不会触发重建。
 
-## 🙋‍♂️ FAQs
+##  常见问题解答
 
-- **I'm running into an error when setting up the backend. How can I fix it?** [Try this](https://github.com/abi/screenshot-to-code/issues/3#issuecomment-1814777959). If that still doesn't work, open an issue.
-- **How do I get an OpenAI API key?** See https://github.com/abi/screenshot-to-code/blob/main/Troubleshooting.md
-- **How can I provide feedback?** For feedback, feature requests and bug reports, open an issue or ping me on [Twitter](https://twitter.com/_abi_).
+- **我如何提供反馈?** 对于反馈、功能请求和报告错误，可以开一个问题反馈或在 qq群 上联系我。
 
-## 📚 Examples
+##  托管版本
 
-**NYTimes**
-
-| Original                                                                                                                                                        | Replica                                                                                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img width="1238" alt="Screenshot 2023-11-20 at 12 54 03 PM" src="https://github.com/abi/screenshot-to-code/assets/23818/3b644dfa-9ca6-4148-84a7-3405b6671922"> | <img width="1414" alt="Screenshot 2023-11-20 at 12 59 56 PM" src="https://github.com/abi/screenshot-to-code/assets/23818/26201c9f-1a28-4f35-a3b1-1f04e2b8ce2a"> |
-
-**Instagram page (with not Taylor Swift pics)**
-
-https://github.com/abi/screenshot-to-code/assets/23818/503eb86a-356e-4dfc-926a-dabdb1ac7ba1
-
-**Hacker News** but it gets the colors wrong at first so we nudge it
-
-https://github.com/abi/screenshot-to-code/assets/23818/3fec0f77-44e8-4fb3-a769-ac7410315e5d
-
-## 🌍 Hosted Version
-
-🆕 [Try it here](https://screenshottocode.com) (bring your own OpenAI key - **your key must have access to GPT-4 Vision. See [FAQ](#%EF%B8%8F-faqs) section for details**). Or see [Getting Started](#-getting-started) for local install instructions.
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/abiraja)
+🆕 [在此处尝试](https://dbbot.net) (自带你的OpenAI密钥 - **你的密钥必须具有对GPT-4 Vision的访问权限。查看 [FAQ](#️-faqs) 部分获取详细信息**). 
