@@ -7,7 +7,13 @@ import {
 } from "./ui/select";
 import { GeneratedCodeConfig } from "../types";
 import { Badge } from "./ui/badge";
+import { Label } from "@radix-ui/react-label";
 
+const myStyle = {
+  color: 'blue', // You can set any color value here
+  fontSize: '1.1rem', // 调整字体大小
+  fontWeight: 'bold', // 设置为粗体
+};
 function generateDisplayComponent(config: GeneratedCodeConfig) {
   switch (config) {
     case GeneratedCodeConfig.HTML_TAILWIND:
@@ -109,6 +115,19 @@ function OutputSettingsSection({
             </SelectGroup>
           </SelectContent>
         </Select>
+      </div>
+      {/* 底部链接部分 */}
+      <div className="flex flex-col items-start mt-4"> {/* 添加 flex-col 使链接垂直堆叠 */}
+        <Label className="font-light leading-relaxed" style={myStyle}>
+          <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gQtTFHCHgyXjsfcXgjKSPBPsNyCJrGDB&jump_from=webapi&authKey=1HpFhOgqS83goVf3Td009vpg09C31cCSRDQYvWeB7Gs5RpwVobiQDS0qAgEOtiq2">
+            免费使用，加入QQ群:640541448
+          </a><br></br><br></br>
+        </Label>
+        <Label className="font-light leading-relaxed" style={myStyle}>
+          <a target="_blank" href="https://github.com/abi/screenshot-to-code">
+            源码地址，点个Star，免费体验
+          </a>
+        </Label>
       </div>
     </div>
   );
