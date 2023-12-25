@@ -41,16 +41,11 @@ If you wish to run the backend on a different port, you need to update the VITE_
 
 For debugging purposes, if you don't want to waste GPT4-Vision calls, you can run the backend in mock mode (this will play a pre-recorded response):
 
-## Docker
+Use the tutorial: First set the configuration API key and address. The gpt4-v and dall-e-3 keys are required. If you don't sign up at https://api.ptocode.com get 100 code generation for free
 
-If Docker is already installed on your system, run the following command in the root directory:
+![image-20231225090659658](C:\Users\49607\AppData\Roaming\Typora\typora-user-images\image-20231225090659658.png)
 
-```
-<TEXT><BASH>echo "OPENAI_API_KEY=sk-your-key" > .env
-docker-compose up -d --build
-```
-
-The application will run on http://localhost:3000. Note that you cannot use this setup for application development since changes to the files will not trigger a rebuild.
+![image-20231225091018764](C:\Users\49607\AppData\Roaming\Typora\typora-user-images\image-20231225091018764.png)
 
 ## Frequently Asked Questions
 
@@ -58,6 +53,6 @@ The application will run on http://localhost:3000. Note that you cannot use this
 
 ## Hosted Version
 
-🆕 [Try it here](https://dbbot.net) (bring your own OpenAI key - **Your key must have access to GPT-4 Vision. See the [FAQ](#️-faqs) section for more details**).
+🆕 [Try it here](https://ptocode.com) (bring your own OpenAI key - **Your key must have access to GPT-4 Vision. See the [FAQ](#️-faqs) section for more details**).
 
-感谢前辈 https://github.com/uuu555552/ptocode
+感谢前辈 https://github.com/abi/screenshot-to-code
