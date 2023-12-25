@@ -1,11 +1,11 @@
-- ​                                                                                                                         [English](README.md) [中文](CN.README.md)
+- ​                                                                                                                         [English](CN.README.md) [中文](README.md)
 - [**free-gpt4apikey**]   
 - <a href="https://twitter.com/Stockqwe222" target="_blank" style="background-color: #1DA1F2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; cursor: pointer; font-size: 16px;">
         Follow me on Twitter!
     </a>
 - <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gQtTFHCHgyXjsfcXgjKSPBPsNyCJrGDB&jump_from=webapi&authKey=1HpFhOgqS83goVf3Td009vpg09C31cCSRDQYvWeB7Gs5RpwVobiQDS0qAgEOtiq2">
     <img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="ptocode交流群" title="ptocode交流群">
-    </a>加群640541448领取免费gpt4,dall
+    </a>加群640541448领取免费gpt4,dall-e-3
 
 # PtoCode（图片转代码）
 
