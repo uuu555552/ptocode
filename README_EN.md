@@ -4,64 +4,87 @@
 
 </div>
 
-# 🚀 Next-Gen AI API: GPT-5, o4, Claude 4.5 & Gemini 3
+# 🚀 Next-Gen AI Aggregator: GPT-5, o4, Claude 4.5 & Gemini 3
 
-[![API Status](https://img.shields.io/badge/API-Online-success)](https://okrouter.com)
+[![API Status](https://img.shields.io/badge/API-99.9%25%20Uptime-success)](https://okrouter.com)
 [![Models](https://img.shields.io/badge/Models-GPT--5%20%7C%20o4%20%7C%20Claude%204.5-purple)](https://okrouter.com)
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://okrouter.com)
+[![Payment](https://img.shields.io/badge/Payment-Credit%20Card%20%7C%20Crypto-blue)](https://okrouter.com)
 
-> **⚠️ Notice:** The legacy code is deprecated.
-> We recommend [**OKRouter**](https://okrouter.com) for accessing the state-of-the-art AI models of 2025 (**GPT-5, o4, Claude 4.5**) via a single interface.
-
----
-
-## 🏆 The Ultimate Model Aggregator
-
-[**OKRouter.com**](https://okrouter.com) allows developers to access **OpenAI (GPT-5, o4)**, **Anthropic (Claude 4.5)**, and **Google (Gemini 3)** through one unified, OpenAI-compatible API endpoint.
-
-### 👉 [Get Your Free API Key](https://okrouter.com)
+> **⚠️ Notice:** The legacy "screenshot-to-code" tool is deprecated.
+> We recommend [**OKRouter**](https://okrouter.com) for accessing state-of-the-art AI models (**GPT-5, o4, Claude 4.5**) via a single, unified interface.
 
 ---
 
-## 💎 Supported Providers & Models (2025)
+## 🏆 The Ultimate AI Gateway for Developers
 
-Switch between the world's most powerful models instantly.
+[**OKRouter.com**](https://okrouter.com) simplifies AI integration. Stop managing separate API keys and billing accounts for OpenAI, Anthropic, and Google. 
 
-| Provider | Top Models | Best For |
+Access all top-tier models through **one unified, OpenAI-compatible endpoint**.
+
+### 👉 [Get Your Free API Key (No Credit Card Required)](https://okrouter.com)
+
+---
+
+## 💎 Why Global Developers Choose OKRouter?
+
+We solve the fragmentation and restriction issues of official providers.
+
+| Feature | OKRouter | Official Providers |
 | :--- | :--- | :--- |
-| **OpenAI** | **GPT-5** / **o4** | 🚀 **AGI-level Intelligence**, Superior Reasoning |
-| **Anthropic** | **Claude 4.5 Sonnet** | 💻 **Ultimate Coding**, Complex Systems |
-| **Google** | **Gemini 3 Pro** | 📚 **Massive Context**, Multimodal Analysis |
-| **xAI** | **Grok-3** | ⚡ **Real-time**, Uncensored |
+| **🌍 Region Locks** | **No Restrictions** (Access Claude 4.5 from EU/Asia) | ⚠️ Restricted in many countries |
+| **💳 Payment** | **Crypto (USDT) & Credit Cards** | ⚠️ Strict Banking Requirements |
+| **⚡ Integration** | **One SDK for All Models** | ❌ Different SDKs for each provider |
+| **🧾 Billing** | **Unified Pay-As-You-Go** | ❌ Multiple Monthly Subscriptions |
+| **🆔 Privacy** | **No Phone Verification / KYC** | ⚠️ Phone Number Required |
+
+---
+
+## 🚀 Supported Models (2025 Flagship)
+
+Switch between models instantly by changing a single string in your code.
+
+| Provider | Model ID | Best Use Case |
+| :--- | :--- | :--- |
+| **OpenAI** | `gpt-5` / `openai-o4` | 🧠 **AGI-Level Reasoning**, Complex Logic |
+| **Anthropic** | `anthropic/claude-4.5-sonnet` | 💻 **SOTA Coding**, System Architecture |
+| **Google** | `google/gemini-3-pro` | 📚 **10M+ Context Window**, Multimodal Analysis |
+| **xAI** | `grok-3` | ⚡ **Real-time Knowledge**, Uncensored |
+
+> 📊 [View Full Pricing & Model List](https://okrouter.com/pricing)
 
 ---
 
 ## 🛠️ Quick Start
 
-Access **Gemini 3** or **Claude 4.5** using the standard OpenAI SDK.
+You can use the standard **OpenAI SDK** (Python/Node.js) to access **Claude** or **Gemini**. No need to learn new libraries.
 
 **Base URL:** `https://api.okrouter.com/v1`
 
 ### Python Example
+
 ```python
 from openai import OpenAI
 
 client = OpenAI(
-    # Use the dedicated API endpoint
+    # 1. Point to OKRouter API Gateway
     base_url="[https://api.okrouter.com/v1](https://api.okrouter.com/v1)",
-    api_key="sk-okrouter-YOUR_KEY"
+    # 2. Use your OKRouter Key
+    api_key="sk-okrouter-YOUR_KEY_HERE"
 )
 
-# Access Claude 4.5 via OpenAI Client!
+# ✨ Magic: Access Claude 4.5 using OpenAI Client!
 response = client.chat.completions.create(
     model="anthropic/claude-4.5-sonnet", 
-    messages=[{"role": "user", "content": "Refactor this code using modern patterns."}]
+    messages=[
+        {"role": "system", "content": "You are a senior software engineer."},
+        {"role": "user", "content": "Explain Quantum Computing to a 5-year-old."}
+    ]
 )
 
 print(response.choices[0].message.content)
-🔗 Links
+🔗 Resources
 Dashboard: https://okrouter.com
 
-Pricing: https://okrouter.com/pricing
+API Documentation: https://okrouter.com/docs
 
-🔍 Keywords
+Pricing: https://okrouter.com/pricing
