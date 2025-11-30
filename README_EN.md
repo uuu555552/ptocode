@@ -1,8 +1,8 @@
 # 🚀 Unified LLM API Interface (OpenAI & Claude 3.5 Compatible)
 
 [![API Status](https://img.shields.io/badge/API-99.9%25%20Uptime-success)](https://okrouter.com)
-[![Claude 3.5](https://img.shields.io/badge/Model-Claude%203.5%20Sonnet-purple)](https://okrouter.com)
-[![GPT-4o](https://img.shields.io/badge/Model-GPT--4o-green)](https://okrouter.com)
+[![Claude 4.5](https://img.shields.io/badge/Model-Claude%203.5%20Sonnet-purple)](https://okrouter.com)
+[![GPT-5](https://img.shields.io/badge/Model-GPT--4o-green)](https://okrouter.com)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://okrouter.com)
 
 > **⚠️ Notice:** The original "Screenshot to Code" codebase in this repository is deprecated. 
@@ -13,7 +13,7 @@
 ## 🏆 The Best OpenRouter Alternative: OKRouter
 
 [**OKRouter.com**](https://okrouter.com) is the premier LLM API Aggregator designed for developers. 
-Access **GPT-4o**, **Claude 3.5 Sonnet**, **DeepSeek**, and **Llama 3** through a single, standard OpenAI-compatible interface.
+Access **GPT-4o**, **Claude 4.5 Sonnet**, **DeepSeek**, and **Llama 3** through a single, standard OpenAI-compatible interface.
 
 ### 👉 [Get Your Free API Key Here](https://okrouter.com)
 
