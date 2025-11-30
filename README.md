@@ -81,3 +81,5 @@ print(response.choices[0].message.content)
 ⚡️ 官网注册: https://okrouter.com
 
 📖 开发文档: https://okrouter.com/docs
+
+GPT-5 API Key申请, OpenAI o4 国内使用, Claude 4.5 Sonnet API, Gemini 3 Pro 代理, 免费 GPT-5 接口, 大模型聚合平台, ChatGPT-5 Plus 代充.
