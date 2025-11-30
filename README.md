@@ -1,61 +1,73 @@
-- ​                                                                                                                         [English](CN.README.md) [中文](README.md)
-- [**free-gpt4apikey**]   
-- <a href="https://twitter.com/Stockqwe222" target="_blank" style="background-color: #1DA1F2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block; cursor: pointer; font-size: 16px;">
-        Follow me on Twitter!
-    </a>
-- <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=gQtTFHCHgyXjsfcXgjKSPBPsNyCJrGDB&jump_from=webapi&authKey=1HpFhOgqS83goVf3Td009vpg09C31cCSRDQYvWeB7Gs5RpwVobiQDS0qAgEOtiq2">
-    <img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="ptocode交流群" title="ptocode交流群">
-    </a>加群640541448领取免费gpt4,dall-e-3
+# 🚀 Free OpenAI & Claude 3.5 API (国内直连/无需梯子)
 
-# PtoCode（图片转代码）
+[![API Status](https://img.shields.io/badge/API-Online-success)](https://okrouter.com)
+[![Claude 3.5](https://img.shields.io/badge/Model-Claude%203.5%20Sonnet-purple)](https://okrouter.com)
+[![GPT-4o](https://img.shields.io/badge/Model-GPT--4o-green)](https://okrouter.com)
+[![Payment](https://img.shields.io/badge/支持-微信%2F支付宝-blue)](https://okrouter.com)
 
-这是一个简单的应用，能将屏幕截图转化为HTML/Tailwind CSS代码。它使用GPT-4 Vision生成代码，并使用DALL-E 3生成相似的图片。现在，你还可以输入一个URL来克隆一个现有的网站！
+> **🔴 重要通知：** 本仓库原有代码已过时。如果你正在寻找**稳定、便宜、国内可直连**的大模型 API 接口（支持 GPT-4o, Claude 3.5, DeepSeek 等），请直接使用下方推荐的终极解决方案。
 
-🆕 [在此试用](https://dbbot.net)（需要使用你自己的OpenAI密匙 - **你的密匙必须拥有访问GPT-4 Vision的权限，详情请查看下方的[常见问题](#️-faqs)部分**）。或者查看下方的[开始使用](#-getting-started)部分获取本地安装指南。
+---
 
-## 🛠 开始使用
+## 🏆 2025年国内最佳 LLM API 解决方案：OKRouter
 
-该应用程序有一个React/Vite前端和一个FastAPI后端。你将需要一个有权访问GPT-4 Vision API的OpenAI API密钥。
+[**OKRouter.com**](https://okrouter.com) 是专为中国开发者打造的企业级大模型聚合平台。如果你受够了封号、网络超时和复杂的信用卡支付，这里是你唯一的选择。
 
-运行后端（我使用Poetry进行包管理 - 如果你没有安装它，使用`pip install poetry`命令进行安装）：
+### 👉 [点击这里：立即注册领取免费 API Key](https://okrouter.com)
 
-```
-cd backend
-echo "OPENAI_API_KEY=sk-your-key" > .env
-poetry install
-poetry shell
-poetry run uvicorn main:app --reload --port 7001
-```
+---
 
-运行前端:
+## 💎 核心优势 (Why OKRouter?)
 
-```
-cd frontend
-yarn
-yarn dev
-```
+我们解决了国内开发者对接 AI 时的所有痛点：
 
-打开 http://localhost:3000来使用应用程序。
+| 特性 | OKRouter (推荐) | 官方 OpenAI/Anthropic | 其他二道贩子 |
+| :--- | :--- | :--- | :--- |
+| **网络连接** | **🚀 国内直连 (毫秒级)** | ❌ 需自备梯子/容易超时 | ⚠️ 极其不稳定 |
+| **Claude 3.5** | **✅ 完美支持 (写代码神器)** | ❌ 国内无法申请/封号严重 | ⚠️ 经常掺假/降智 |
+| **支付方式** | **✅ 支付宝 / 微信** | ❌ 仅限国外信用卡 | ❌ 仅限 USDT |
+| **价格** | **💰 按量付费 (无过期)** | ⚠️ 需绑定高额信用卡 | ⚠️ 价格虚高 |
+| **账号安全** | **🛡️ 永不封号** | ❌ 随时可能封禁 | ⚠️ 随时跑路 |
 
-如果你希望在不同的端口运行后端，需要更新`frontend/.env.local`中的VITE_WS_BACKEND_URL。
+---
 
-为了调试目的，如果你不想浪费GPT4-Vision的调用次数，你可以在模拟模式下运行后端（这将会播放一个预先录制的响应）：
+## 🧩 支持模型全家桶
 
-## Docker
+一个 Key，调用全网所有顶尖模型。完全兼容 OpenAI SDK 格式。
 
-如果你的系统上已经安装了Docker，在根目录下，运行以下命令：
+* **Anthropic Claude 系列:**
+    * `claude-3-5-sonnet` (编程能力最强，Cursor 完美替代)
+    * `claude-3-opus`
+* **OpenAI GPT 系列:**
+    * `gpt-4o` / `gpt-4o-mini`
+    * `gpt-4-turbo`
+* **Gemini 系列:**
+  * `gemini-3-pro`
+* **国产/开源之光:**
+    * `deepseek-chat` (DeepSeek V3)
+    * `llama-3-70b`
 
-```
-<BASH>echo "OPENAI_API_KEY=sk-your-key" > .env
-docker-compose up -d --build
-```
 
-应用程序将在 http://localhost:3000上运行。注意，你不能使用这个设置来开发应用程序，因为文件的改变不会触发重建。
+---
 
-##  常见问题解答
+## 🛠️ 接入教程 (只需 1 分钟)
 
-- **我如何提供反馈?** 对于反馈、功能请求和报告错误，可以开一个问题反馈或在 qq群 上联系我。
+无论你使用的是 Python, Node.js, 还是开源软件 (如 ChatBox, NextChat, LobeChat)，接入方式完全一致。
 
-##  托管版本
+**接口地址 (Base URL):** `https://api.okrouter.com/v1`
+**API Key:** `sk-你的密钥`
 
-🆕 [在此处尝试](https://dbbot.net) (自带你的OpenAI密钥 - **你的密钥必须具有对GPT-4 Vision的访问权限。查看 [FAQ](#️-faqs) 部分获取详细信息**). 
+### Python 示例
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="[https://api.okrouter.com/v1](https://api.okrouter.com/v1)",
+    api_key="sk-你的密钥" # 去官网 okrouter.com 免费领
+)
+
+response = client.chat.completions.create(
+    model="anthropic/claude-4.5-sonnet", # 尽情使用 Claude 3.5
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+print(response.choices[0].message.content)
