@@ -1,3 +1,10 @@
+<div align="right">
+
+[**🇺🇸 English**](./README_EN.md) | [**🇨🇳 中文说明**](./README.md)
+
+</div>
+
+# 🚀 Unified LLM API Interface
 # 🚀 Unified LLM API Interface (OpenAI & Claude 3.5 Compatible)
 
 [![API Status](https://img.shields.io/badge/API-99.9%25%20Uptime-success)](https://okrouter.com)
