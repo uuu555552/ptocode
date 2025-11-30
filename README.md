@@ -1,4 +1,11 @@
-# 🚀 Free OpenAI & Claude 3.5 API (国内直连/无需梯子)
+<div align="right">
+
+[**🇺🇸 English**](./README_EN.md) | [**🇨🇳 中文说明**](./README.md)
+
+</div>
+
+# 📸 Screenshot to Code (基于 OKRouter 国内直连版)
+# 🚀 Free OpenAI & Claude 4.5 API (国内直连/无需梯子)，claudecode
 
 [![API Status](https://img.shields.io/badge/API-Online-success)](https://okrouter.com)
 [![Claude 3.5](https://img.shields.io/badge/Model-Claude%203.5%20Sonnet-purple)](https://okrouter.com)
