@@ -88,3 +88,7 @@ Dashboard: https://okrouter.com
 API Documentation: https://okrouter.com/docs
 
 Pricing: https://okrouter.com/pricing
+---
+
+### 🔍 Global SEO Keywords
+LLM Aggregator, Unified AI API, Claude 4.5 API No Region Lock, OpenAI o4 API Access, GPT-5 API Proxy, Buy GPT-4o with Crypto, Gemini 3 API Key, AI Gateway for Developers.
