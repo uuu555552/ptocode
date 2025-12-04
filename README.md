@@ -16,7 +16,7 @@
 ---
 
 ## 🏆 OKRouter: 首发支持下一代 AI 模型
-
+👉 **Get your Universal AI API Key:** [https://okrouter.com](https://okrouter.com)
 [**OKRouter.com**](https://okrouter.com) 是国内首家支持 **GPT-5** 和 **Claude 4.5** 的企业级聚合平台。
 我们打破了账号封禁和地域限制，通过**统一的 OpenAI 格式接口**，让你抢先接入全球最强模型。
 
